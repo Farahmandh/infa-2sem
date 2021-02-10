@@ -65,3 +65,25 @@ std::cout << '\n';
 }
 
 упражнение 6
+
+#include <iostream>
+
+int main() {
+int n, h;
+std::cin >> n;
+int left = 1, right = n;
+h = (n + 1)/2;
+for( int i=0; i < h; i++) {
+  for(int j = 1 ; j <= n; j++) {
+    if(j < left || j > right) {
+      std::cout << " ";
+    } else {
+      std::cout << "*";
+    }
+  }
+  std::cout << '\n';
+  left++;
+  right--;
+}
+
+}
