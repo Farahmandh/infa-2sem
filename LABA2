@@ -113,3 +113,17 @@ for (int i = 2; i * i <= n; i += 1){
 std::cout << 1;
 }
 
+H
+
+#include <iostream>
+
+int main() {
+int n, k;
+std::cin >> n;
+k = n;
+for( int i = 1; i < n; i++){
+  for( int j = 2; j <= k ; j++ ){
+  if( k % j == 0) { std::cout << j << '\n';  k = k/j; break;}
+}
+}
+}
