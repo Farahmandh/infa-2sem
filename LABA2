@@ -1,1 +1,59 @@
+A
 
+#include <iostream>
+
+int main() {
+int a, b;
+std::cin >> a >> b;
+while( a != 0 && b != 0){
+if( a > b)
+a = a % b;
+else
+b = b % a;
+
+}
+std::cout << a + b;
+}
+
+B
+
+#include <iostream>
+
+int main() {
+int n;
+std::cin >> n;
+if( (n % 4 != 0) || ((n % 100 == 0) && (n % 400 != 0))) 
+std::cout << "no";
+else std::cout << "yes";
+}
+
+C
+
+#include <iostream>
+
+int main() {
+int n=-1,a;
+do{
+std::cin>>a;
+if(a%2==0) n++;
+}
+while(a);
+std::cout<<n;
+
+}
+
+D
+
+#include <iostream>
+
+int main() {
+int n, a=1;
+std::cin >> n;
+while( a < n)
+{
+a*=2;
+}
+if(a == n) std::cout << "yes";
+else std::cout << "no";
+
+}
