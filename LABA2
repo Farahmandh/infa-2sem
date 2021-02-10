@@ -88,3 +88,28 @@ if( n == max ) {k++;}
 
 std::cout << k;
 }
+
+G
+
+#include <iostream>
+
+int main() {
+int n;
+std::cin >> n;
+if(n == 1) {
+    std::cout << 0;
+    return 0;  
+}
+if(n == 2) {
+    std::cout << 1;
+    return 0;  
+}
+for (int i = 2; i * i <= n; i += 1){
+  if( n % i == 0) {
+    std::cout << 0;
+    return 0; 
+  } 
+}
+std::cout << 1;
+}
+
