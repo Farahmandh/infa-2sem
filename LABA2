@@ -57,3 +57,17 @@ if(a == n) std::cout << "yes";
 else std::cout << "no";
 
 }
+
+E
+
+#include <iostream>
+
+int main() {
+int n, max = 0;
+std::cin >> n;
+while( n != 0){
+std::cin >> n;
+if( n > max && n % 2 == 0){ max = n;}
+}
+std::cout << max;
+}
