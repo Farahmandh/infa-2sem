@@ -71,3 +71,20 @@ if( n > max && n % 2 == 0){ max = n;}
 }
 std::cout << max;
 }
+
+F
+
+#include <iostream>
+
+int main() {
+int n, k = 0; 
+std::cin >> n;
+int max = n;
+while( n != 0){
+std::cin >> n;
+if( n > max ){ max = n; k = 0;}
+if( n == max ) {k++;}
+}
+
+std::cout << k;
+}
