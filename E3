@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	std::cin >> a >> b;
+	int *p = &a;
+	int *q = &b;
+	cout << do_some_awesome_work(p, q) << /n;
+	return 0;
+}
